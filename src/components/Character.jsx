@@ -31,7 +31,7 @@ function Character() {
     };
     fetchData();
   }, [characterId]);
-
+  console.log(comics);
   return isLoading ? (
     <div className="loading">Loading...</div>
   ) : (
@@ -46,14 +46,15 @@ function Character() {
         <p className="character-description">{character.description}</p>
       </div>
       <div className="comics-link">
-        <h2>Comics</h2>
+        <h2>Character-related comics</h2>
         <div className="comics-container">
-          {comics.map((comic, index) => (
+          {comics.comics.map((comic, index) => (
             <div className="comics-card" key={index}>
               <img
                 src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
                 alt=""
               />
+
               <h3>{comic.title}</h3>
               <h4>{comic.description}</h4>
             </div>

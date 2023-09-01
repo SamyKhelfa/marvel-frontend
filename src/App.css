@@ -1,27 +1,23 @@
-@import "./css/character.css";
-@import "./css/characters.css";
-@import "./css/comics.css";
-/* @import "./css/comic.css"; */
-
-body {
+#root {
   font-family: "Marvel", sans-serif;
 }
 
+header {
+}
+
 .marvel-container {
+  text-decoration: none;
   width: 100%;
   height: 100px;
   display: flex;
   justify-content: center;
   background-color: black;
-  border: solid 2px;
-  box-sizing: border-box;
   margin-top: 20px; /* Ajouter de l'espace en haut */
   margin-bottom: 20px; /* Ajouter de l'espace en bas */
 }
 
 button {
-  align-items: ;
-  font-family: "Arial", sans-serif;
+  font-family: "Marvel", sans-serif;
   font-size: 16px;
   font-weight: bold;
   padding: 10px 20px;
@@ -44,4 +40,18 @@ button {
 
 img {
   margin-top: 10px;
+}
+
+.link-characters {
+  color: white;
+  text-decoration: none;
+}
+
+.link-comics {
+  color: white;
+  text-decoration: none;
+}
+.link-favorits {
+  color: white;
+  text-decoration: none;
 }

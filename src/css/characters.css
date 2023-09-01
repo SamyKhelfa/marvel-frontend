@@ -1,3 +1,11 @@
+#root {
+  font-family: "Marvel", sans-serif;
+}
+h3 {
+  text-decoration: none;
+  color: white;
+}
+
 .character-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -8,7 +16,6 @@
 
 .character-card {
   width: 100%;
-  background-color: #f4f4f4;
   border-radius: 5px;
   padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -19,8 +26,9 @@
 }
 
 .character-container :hover {
-  background-color: #e62429;
-  transition: background-color 0.3s, color 0.3s;
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
 }
 
 .character-card img {
@@ -36,4 +44,8 @@
 
 body {
   background-color: black;
+}
+
+a {
+  text-decoration: none;
 }
