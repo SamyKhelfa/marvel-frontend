@@ -1,0 +1,35 @@
+.comics-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espacement entre les cartes */
+  margin-top: 20px; /* Espacement en haut */
+  margin-bottom: 20px; /* Espacement en bas */
+}
+
+.comics-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.comics-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.comics-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.comics-card h4 {
+  margin: 10px 0 0;
+  font-size: 1rem;
+  color: #666;
+}
