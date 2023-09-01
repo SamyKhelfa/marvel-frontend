@@ -2,9 +2,6 @@
   font-family: "Marvel", sans-serif;
 }
 
-header {
-}
-
 .marvel-container {
   text-decoration: none;
   width: 100%;
@@ -25,10 +22,14 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
   background-color: #e62429;
   text-decoration: none;
   color: white;
+}
+
+button:hover {
+  background-color: grey;
+  transition-duration: 0.3s;
 }
 
 .buttons {
