@@ -11,7 +11,7 @@ function Characters() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://site--marvel-backend--5w6h6n8z57mm.code.run/characters"
+          "https://marvel-backend-samys-projects-18d2caaa.vercel.app/characters"
         );
         setData(response.data);
         setIsLoading(false);

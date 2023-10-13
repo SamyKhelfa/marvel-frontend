@@ -10,7 +10,7 @@ function Comics() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://site--marvel-backend--5w6h6n8z57mm.code.run/comics"
+          "https://marvel-backend-git-main-samys-projects-18d2caaa.vercel.app/comics"
         );
         setData(response.data);
         setIsLoading(false);
